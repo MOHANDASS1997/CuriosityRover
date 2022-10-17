@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.Cut"
+    app:cardPreventCornerOverlap="true"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="false"
+    android:background="@color/white">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.DataFetchFragment"
+        android:paddingVertical="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:paddingHorizontal="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:id="@+id/about_image"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:layout_gravity="center"
+            android:src="@mipmap/rover_launch_icon_round"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_description1"
+            android:layout_marginVertical="5dp"
+            android:textSize="18sp"
+            android:textStyle="italic|bold"
+            android:textAlignment="center"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/grey"
+            app:cardPreventCornerOverlap="true"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            >
+            <TableLayout
+                android:layout_marginVertical="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                >
+                <TextView
+                    android:layout_marginVertical="2dp"
+                    android:layout_height="wrap_content"
+                    android:text="SPECIFICATIONS"
+                    android:background="@color/teal_700"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+                <TableRow android:layout_marginVertical="3dp">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="0dp"
+                        android:text="Type"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="rover"/>
+                </TableRow>
+                <TableRow android:layout_marginVertical="1dp">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="0dp"
+                        android:text="Owner"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="NASA"/>
+                </TableRow>
+                <TableRow android:layout_marginVertical="1dp">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textStyle="bold"
+                        android:text="Dimensions"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="2.9 m × 2.7 m × 2.2 m"/>
+                </TableRow>
+                <TableRow android:layout_marginVertical="1dp">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textStyle="bold"
+                        android:text="Dry Mass"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="899 kg (1,982 lb)"/>
+                </TableRow>
+                <TableRow android:layout_marginVertical="1dp">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textStyle="bold"
+                        android:text="Power"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="MMRTG: ~100 W (0.13 hp) "/>
+                </TableRow>
+            </TableLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/grey"
+            app:cardPreventCornerOverlap="true"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            android:layout_weight="1"
+            >
+            <TableLayout
+                android:layout_marginVertical="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="2dp"
+                    android:text="HISTORY"
+                    android:background="@color/teal_700"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+                <TableRow android:layout_marginVertical="3dp">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:paddingLeft="5dp"
+                        android:text="Launched"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="26 November 2011"/>
+                </TableRow>
+                <TableRow android:layout_marginVertical="1dp">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:paddingLeft="5dp"
+                        android:text="Deployed"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="6 August 2012"/>
+                </TableRow>
+                <TableRow android:layout_marginVertical="1dp">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textStyle="bold"
+                        android:text="Location"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Gale crater, Mars"/>
+                </TableRow>
+                <TableRow android:layout_marginVertical="1dp">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textStyle="bold"
+                        android:text="Travelled"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="28.15 km on Mars"/>
+                </TableRow>
+            </TableLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+    </ScrollView>
+</com.google.android.material.card.MaterialCardView>

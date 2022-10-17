@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_base"
+    android:orientation="vertical"
+    tools:context=".CardDescription">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/grey"
+        app:cardPreventCornerOverlap="false">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:scaleY="0.4"
+                    android:scaleX="0.5"
+                    android:src="@mipmap/back_arrow_round"
+                    android:id="@+id/back_button_activity2"
+                    android:layout_marginVertical="5dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SAVE"
+                    android:id="@+id/handle_data_btn"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/color_base"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginHorizontal="10dp"
+                    android:onClick="handleData"
+                    />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/back_button_activity2"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:cardBackgroundColor="@color/grey"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:id="@+id/rover_image_card"
+                    >
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/rover_image_description_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/back_button_activity2" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:cardBackgroundColor="@color/grey"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:id="@+id/rover_image_info"
+                    android:layout_below="@id/rover_image_card"
+                    >
+                    <TableLayout
+                        android:layout_marginVertical="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="*"
+                        >
+                        <TextView
+                            android:layout_marginVertical="2dp"
+                            android:layout_height="wrap_content"
+                            android:text="INFORMATION"
+                            android:background="@color/teal_700"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"/>
+                        <TableRow android:layout_marginVertical="3dp">
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="0dp"
+                                android:text="Image ID"/>
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/description_image_id"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:text="21842"/>
+                        </TableRow>
+                        <TableRow android:layout_marginVertical="1dp" >
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="0dp"
+                                android:text="SOL"/>
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_height="wrap_content"
+                                android:id="@+id/description_image_sol"
+                                android:textSize="18sp"
+                                android:text="1000"/>
+                        </TableRow>
+                        <TableRow android:layout_marginVertical="1dp">
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:paddingLeft="5dp"
+                                android:textStyle="bold"
+                                android:text="Camera"/>
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:id="@+id/description_image_camera"
+                                android:text="FHAZ"/>
+                        </TableRow>
+                        <TableRow android:layout_marginVertical="1dp">
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:paddingLeft="5dp"
+                                android:textStyle="bold"
+                                android:text="Earth Date"/>
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:id="@+id/description_image_date"
+                                android:text="2015-08-06"/>
+                        </TableRow>
+                    </TableLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:cardBackgroundColor="@color/grey"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:padding="5dp"
+                    android:layout_below="@id/rover_image_info"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:padding="10dp"
+                        android:text="@string/sol_definition"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

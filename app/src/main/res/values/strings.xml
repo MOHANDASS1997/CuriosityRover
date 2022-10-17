@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">CuriosityRover</string>
+    <string name="about_description1">Curiosity is a car-sized Mars rover designed to explore the Gale crater on Mars as part of NASA\'s Mars Science Laboratory (MSL) mission.</string>
+    <string name="home_description1">Curiosity Rover has taken several pictures of MARS in its lifetime</string>
+    <string name="home_description">View the images of MARS taken by Curiosity Rover. \n\nMandatory field: Date </string>
+    <string name="about_description2">Mission goals include an investigation of the Martian climate and geology, assessment of whether the selected field site inside Gale has ever offered environmental conditions favorable for microbial life (including investigation of the role of water), and planetary habitability studies in preparation for human exploration.</string>
+    <string name="sol_definition">Sol is a NASA term for Solar day and is essentially used by the planetary scientists. It refers to the time that it takes for Mars to revolve once around its own axis. Mars has a similar daily cycle as the Earth, and the term Sol is used to distinguish it for its longer solar day than the Earth by roughly 3%</string>
+
+    <string name="camera_fhaz">* FHAZ - Front Hazard Avoidance Camera</string>
+    <string name="camera_rhaz">* RHAZ - Rear Hazard Avoidance Camera</string>
+    <string name="camera_mast">* MAST - Mast Camera</string>
+    <string name="camera_chemcam">* CHEMCAM - Chemistry and Camera Complex</string>
+    <string name="camera_mahli">* MAHLI - Mars Hand Lens Imager</string>
+    <string name="camera_mardi">* MARDI - Mars Descent Imager</string>
+    <string name="camera_navcam">* NAVCAM - Navigation Camera</string>
+
+    <string name="page_input">* Each page can return only a maximum of 25 items</string>
+
+    <string-array name="camera_types">
+        <item>All</item>
+        <item>FHAZ</item>
+        <item>RHAZ</item>
+        <item>MAST</item>
+        <item>CHEMCAM</item>
+        <item>MAHLI</item>
+        <item>MARDI</item>
+        <item>NAVCAM</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
